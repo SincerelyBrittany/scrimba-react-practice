@@ -1,19 +1,11 @@
 export default function TodoItem(props) {
-  console.log(props)
+  console.log(props, "this is props")
   return (
       <div>
-         <input type="checkbox" />
-          {/* <input type="checkbox" />
-          <p>Placeholder text here</p>
-          
-          <input type="checkbox" />
-          <p>Placeholder text here</p>
-          
-          <input type="checkbox" />
-          <p>Placeholder text here</p>
-          
-          <input type="checkbox" />
-          <p>Placeholder text here</p> */}
+         <input type="checkbox" checked={props.completed} />
+    
+          <p>{props.title}</p>
+         
       </div>
   )
 }
