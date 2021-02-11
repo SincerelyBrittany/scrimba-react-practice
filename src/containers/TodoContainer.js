@@ -17,7 +17,9 @@ console.log(state, "this is state")
 
   return (
     <>
-    {hasError? <div>Error occured.</div> : (state.map( d => <div>{d}</div>))}      
+    {hasError? <div>Error occured.</div> : (state.map( d => 
+    <TodoItem userId={d.userId} id={d.id} title={d.title} completed={d.completed} />
+      ))}      
     </>
       // <div className="todo-item">
       //     {/* <TodoItem userId = {user} id= {key} title= {title} completed={completed} />
